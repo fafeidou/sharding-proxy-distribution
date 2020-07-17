@@ -21,8 +21,8 @@ MAINTAINER ShardingSphere "dev@shardingsphere.apache.org"
 ARG APP_NAME
 ENV LOCAL_PATH /opt/sharding-proxy
 
-ADD target/${APP_NAME}.tar.gz /opt
-RUN mv /opt/${APP_NAME} ${LOCAL_PATH}
+ADD target/sharding-proxy-bin.tar.gz /opt
+RUN mv /opt/sharding-proxy-bin ${LOCAL_PATH}
 RUN mkdir -p ${LOCAL_PATH}/ext-lib
 
 ENTRYPOINT ${LOCAL_PATH}/bin/start.sh ${PORT} && tail -f ${LOCAL_PATH}/logs/stdout.log
