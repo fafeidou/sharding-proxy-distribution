@@ -17,6 +17,7 @@
 
 FROM openjdk:8u191-jdk-alpine3.9
 MAINTAINER ShardingSphere "dev@shardingsphere.apache.org"
+LABEL name="docker-sharding-proxy" version="1.0" author="476688386@qq.com"
 
 ARG APP_NAME
 ENV LOCAL_PATH /opt/sharding-proxy
