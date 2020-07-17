@@ -29,6 +29,6 @@ RUN ls /opt
 
 RUN ls /opt/sharding-proxy/bin/
 
-RUN mkdir -p ${LOCAL_PATH}/ext-lib
+#RUN mkdir -p ${LOCAL_PATH}/ext-lib
 
 RUN ${LOCAL_PATH}/bin/start.sh ${PORT} && tail -f ${LOCAL_PATH}/logs/stdout.log
