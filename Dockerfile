@@ -32,4 +32,4 @@ RUN ls /opt/sharding-proxy/bin/
 RUN mkdir -p ${LOCAL_PATH}/ext-lib
 RUN chmod 777 /opt/sharding-proxy/bin/start.sh
 
-RUN ${LOCAL_PATH}/bin/start.sh ${PORT} && tail -f ${LOCAL_PATH}/logs/stdout.log
+RUN /opt/sharding-proxy/bin/start.sh ${PORT} && tail -f ${LOCAL_PATH}/logs/stdout.log
