@@ -118,7 +118,7 @@
                             <repository>apache/sharding-proxy</repository>
                             <tag>${project.version}</tag>
                             <buildArgs>
-                                <APP_NAME>${project.build.finalName}-sharding-proxy-bin</APP_NAME>
+                                <APP_NAME>sharding-proxy-bin</APP_NAME>
                             </buildArgs>
                         </configuration>
                     </plugin>
