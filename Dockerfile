@@ -22,7 +22,7 @@ LABEL name="docker-sharding-proxy" version="1.0" author="476688386@qq.com"
 ARG APP_NAME
 ENV LOCAL_PATH /opt/sharding-proxy
 
-ADD target/sharding-proxy-distribution-4.0.0-sharding-proxy-bin.tar.gz /opt
+ADD target/sharding-proxy-distribution-4.0.0-sharding-proxy.tar.gz /opt
 RUN mv /opt/sharding-proxy-bin ${LOCAL_PATH}
 
 RUN ls /opt
