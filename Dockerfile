@@ -25,6 +25,8 @@ ENV LOCAL_PATH /opt/sharding-proxy
 ADD target/sharding-proxy-distribution-4.0.0-sharding-proxy-bin.tar.gz /opt
 RUN mv /opt/sharding-proxy-bin ${LOCAL_PATH}
 
-RUN mkdir -p ${LOCAL_PATH}/ext-lib
 RUN ls /opt/sharding-proxy/bin/
+
+RUN mkdir -p ${LOCAL_PATH}/ext-lib
+
 RUN ${LOCAL_PATH}/bin/start.sh ${PORT} && tail -f ${LOCAL_PATH}/logs/stdout.log
